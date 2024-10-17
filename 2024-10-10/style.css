@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#main-heading {
+    /*ID-Selektor*/
+    color: #009688;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #444;
+    font-size: 2.5rem;
+}
+
+/* About Section */
+.about {
+    /*Klassenselektor*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about .image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about .text {
+    flex: 1;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.about .image img:hover {
+    /*Pseudoklasse*/
+    transform: scale(1.1);
+    /* Vergrößert das Bild beim Hover */
+    transition: transform 0.3s ease;
+}
+
+
+/* Interests Section */
+.interests {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-left: 4px solid #009688;
+    margin-bottom: 20px;
+}
+
+.interests h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests ul li {
+    background: #009688;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.interests ul li:nth-child(2) {
+    /*Pseudoklasse*/
+    background-color: #ff5722;
+    /* Ändert die Hintergrundfarbe des zweiten Elements in der Liste */
+}
+
+/* Das erste Listen-Element innerhalb der .interests Liste bekommt eine besondere Hintergrundfarbe */
+/*Pseudoklassen-selektor*/
+.interests ul li:first-of-type {
+    background-color: #ff9800;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #009688;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a[href^="https://"] {
+    /*Attributklasse*/
+    color: blue;
+    font-weight: bold;
+}
+
+/* Besuchte Links im Footer werden lila angezeigt */
+/*Pseudoklassen-Selektor*/
+footer a:visited {
+    color: purple;
+}
