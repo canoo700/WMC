@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Zusätzliche Styles für exakte Übereinstimmung */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        #main-heading {
+            color: #009688;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        /* Bild-Styling */
+        .about img {
+            width: auto;
+            max-width: 200px;
+            /* Maximalgröße des Bildes */
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            /* Verhindert Verzerrung des Bildes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about img:hover {
+            transform: scale(1.1);
+            /* Bild leicht vergrößern */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            /* Schattierung bei Hover */
+        }
+
+        .about div {
+            margin-left: 20px;
+            flex-grow: 1;
+            /* Verhindert, dass der Text zu schmal wird */
+        }
+
+        .interests {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-left: 4px solid #009688;
+        }
+
+        .interests ul li {
+            list-style-type: none;
+            background: #009688;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .interests ul li:nth-child(2) {
+            background-color: #ff5722;
+        }
+
+        .interests ul li:first-of-type {
+            background-color: #ff9800;
+        }
+
+        footer {
+            background-color: #009688;
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        a[href^="https://"] {
+            color: blue;
+            font-weight: bold;
+        }
+
+        footer a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container wrapper">
+        <!-- Header Section -->
+        <header class="text-center mb-4">
+            <h1 id="main-heading" class="text-center">Über mich</h1>
+        </header>
+
+        <!-- About Section -->
+        <section class="about">
+            <div>
+                <img src="profile.jpg" alt="Profilbild" class="img-fluid">
+            </div>
+            <div>
+                <h2 class="h3 text-secondary">Hallo, ich bin Cankat Sahiner</h2>
+                <p class="text-muted">
+                    Ich gehe derzeit in die HTL-Spengergasse und möchte mich gerne vorstellen. Ich bin 22 Jahre alt und
+                    habe vor, nach 2 Jahren zu maturieren. In meiner Freizeit betreibe ich viel Sport und verbringe viel
+                    Zeit mit meiner Familie bzw. mit meinen Freunden. Ich versuche mich in jeder Hinsicht
+                    weiterzuentwickeln und teile meine Erfahrungen gerne mit anderen Menschen. Außerdem mag ich es,
+                    Musik zu hören, da dies ein Motivationsfaktor für mich ist.
+                </p>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="interests mb-4">
+            <h3 class="h4">Meine Interessen</h3>
+            <ul class="p-0">
+                <li>Fitness</li>
+                <li>Zeit mit der Familie/Freunde verbringen</li>
+                <li>Musik</li>
+                <li>Selbstentwicklung</li>
+            </ul>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-4">
+            <p>Kontakt: <a href="https://www.gmx.at/">sahiner.cankat@gmx.at</a></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
